@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "prisma.prisma",
     "dbaeumer.vscode-eslint",
     "csstools.postcss",
     "esbenp.prettier-vscode",

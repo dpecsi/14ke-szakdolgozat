@@ -32,7 +32,8 @@
 
 
 ## Forrásjelölés
-- .vscode mappa tartalma: https://github.com/nits68/next-frontend-starter
+- `.vscode` mappa, `package.json` tartalma: https://github.com/nits68/next-frontend-starter
+- `prisma` mappa, `tsconfig.json`, `prisma.config.ts`, `package.json` tartalma: https://github.com/nits68/next-backend-starter8
 
 # Minden jog fenntartva!
 A projekt felhasználása zárt forrású, vagy kereskedelmi szoftverben szigorúan tilos!   
