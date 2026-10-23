@@ -1,10 +1,11 @@
+// use prisma-8
 // Krisztián! Ez elméletben a tiéd!
 model User {
-  id        Int                        @id() @default(autoincrement())
-  username  String
-  name      String
-  createdAt DateTime                   @default(now())
-  updatedAt DateTime
+  _id       Int32     @id @onCreate(autoincrement()) // FIXME: MongoDB-ben nincs autoincrement, JS oldalon kell megoldani egy plusz táblával
+  username  String    @unique
+  name      String    
+  createdAt Date      @onCreate(now())
+  updatedAt Date
 
   @@map("users")
 }

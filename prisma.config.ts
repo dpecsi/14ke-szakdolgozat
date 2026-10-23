@@ -7,7 +7,7 @@ export default definePrismaConfig({
     contract: "./prisma/contract.prisma",
     db: {
       // a CLI (migrációk) a direkt kapcsolatot használja, ha van ilyen (Neon)
-      connection: (process.env["DIRECT_URL"] ?? process.env["DATABASE_URL"])!,
+      connection: (process.env["DATABASE_URL"])!,
     },
   }),
   skills: {
