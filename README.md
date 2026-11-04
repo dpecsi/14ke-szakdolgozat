@@ -25,7 +25,7 @@
    - ittvan (logikai, beérkezett-e az igény a központba)
    - valasz (string, a válasz az igényre)
    - zart (logikai, a lezárt jegyek máshol jelennek meg)
-2. Userek: (ez nem tudom hogy épül fel)
+2. Userek:
    - nev (string, user neve)
    - pw (string, user plaintext jelszava)
    - admin (logikai, ha igaz, csak válaszolni tud, új jegyet nem tud létrehozni, ha hamis akkor csak új jegyet tud létrehozni, válaszolni nem tud)
