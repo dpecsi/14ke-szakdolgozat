@@ -24,11 +24,12 @@
    - igeny (string, az igény rövid leírása)
    - ittvan (logikai, beérkezett-e az igény a központba)
    - valasz (string, a válasz az igényre)
-   - lezart? (logikai, a lezárt jegyek máshol jelennek meg) ennek nem tudom mi pontosan a neve
-2. Userek: (ez nem tudom hogy épül fel)
+   - zart (logikai, a lezárt jegyek máshol jelennek meg)
+2. Userek:
    - nev (string, user neve)
-   - jelszo (string, user jelszava)
-   - valaszolo (logikai, ha igaz, csak válaszolni tud, új jegyet nem tud létrehozni, ha hamis akkor csak új jegyet tud létrehozni, válaszolni nem tud)
+   - pw (string, user plaintext jelszava)
+   - admin (logikai, ha igaz, csak válaszolni tud, új jegyet nem tud létrehozni, ha hamis akkor csak új jegyet tud létrehozni, válaszolni nem tud)
+   - belep (utolsó belépés pontos ideje, vagy üres ha még nem lépett be)
 
 
 ## Forrásjelölés
