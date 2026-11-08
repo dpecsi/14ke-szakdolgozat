@@ -28,6 +28,7 @@
   "js/ts.preferences.importModuleSpecifier": "non-relative",
   "js/ts.tsdk.path": "./node_modules/typescript/lib",
   "workbench.editor.customLabels.patterns": {
+    "**/app/api/**/route.ts": "${dirname}\\API",
     "**/app/**/page.tsx": "${dirname}\\Page",
     "**/app/**/layout.tsx": "${dirname}\\Layout",
     "**/components/**/index.tsx": "${dirname}\\Component"
