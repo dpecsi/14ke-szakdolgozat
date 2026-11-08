@@ -1,11 +1,15 @@
 # 14.KE szakdolgozat
 
+Szolgálati jegy követő program
+
 ## Készítette
 
 - Pécsi Dániel
 - Tóth Krisztián
 
 ## Eredeti felépítés (kiinduló pont)
+
+A projekt egy már létező ASPX alapú programra épül, aminek az alábbi a felépítése:
 
 - Be- és kijelentkezés
 - Jelszó módosítás
@@ -15,6 +19,8 @@
 - Szállító, fizetési eszköz módosítása
 
 ## Eredeti adatbázis táblák
+
+A program eredetileg az alábbi táblákkal rendelkezett, ebből indultunk ki, ezeket az információkat kellett megőriznünk, ráépítenünk:
 
 1. Jegyek:
    - szam (sorszám, auto növekedő)
