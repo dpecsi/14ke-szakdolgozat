@@ -2,8 +2,9 @@ import "dotenv/config";
 import mongo from "@prisma/orm-mongo/runtime";
 import type { Contract } from "./contract.d";
 import contractJson from "./contract.json" with { type: "json" };
-
-const createDb = () => mongo<Contract>({ contractJson, url: process.env["DATABASE_URL"]! });
+import { contractFromJson } from "@prisma/orm-mongo/static";
+export const contract = contractFromJson<Contract>(contractJson);
+const createDb = () => mongo<Contract>({ contract, url: process.env["DATABASE_URL"]! });
 type Db = ReturnType<typeof createDb>;
 
 // Egyetlen kliens példány a Next.js hot reload miatt. Ha a contract megváltozik

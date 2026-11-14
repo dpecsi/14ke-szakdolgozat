@@ -1,7 +1,7 @@
 // use prisma-8
 // Krisztián! Ez elméletben a tiéd!
 model User {
-  _id       Int32     @id @onCreate(autoincrement()) // FIXME: MongoDB-ben nincs autoincrement, JS oldalon kell megoldani egy plusz táblával
+  _id       Int32     @id
   username  String    @unique
   name      String    
   createdAt Date      @onCreate(now())
