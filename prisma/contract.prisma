@@ -1,11 +1,12 @@
 // use prisma-8
-// Krisztián! Ez elméletben a tiéd!
+
 model User {
-  _id       Int32     @id
+  id        ObjectId  @id @map("_id")
   username  String    @unique
   name      String    
+  email     String?
   createdAt Date      @onCreate(now())
-  updatedAt Date
+  updatedAt Date?
 
   @@map("users")
 }

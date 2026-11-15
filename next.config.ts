@@ -18,6 +18,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  serverExternalPackages: ["@prisma/orm-mongo"],
 };
 
 export default nextConfig;
