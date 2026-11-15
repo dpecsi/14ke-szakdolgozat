@@ -1,15 +1,8 @@
 import { db } from "@/prisma/db";
 import { seed } from "@/prisma/seed";
+import { User } from "@/prisma/types";
 import { NextRequest, NextResponse } from "next/server";
 
-type User = {
-  id: string;
-  username: string;
-  name: string;
-  email?: string;
-  createdAt: Date;
-  updatedAt?: Date;
-};
 
 export async function GET(request: NextRequest) {
   try {
