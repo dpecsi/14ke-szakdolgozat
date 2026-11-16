@@ -3,7 +3,6 @@ import { seed } from "@/prisma/seed";
 import { User } from "@/prisma/types";
 import { NextRequest, NextResponse } from "next/server";
 
-
 export async function GET(request: NextRequest) {
   try {
     await seed();
@@ -11,17 +10,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error });
   }
   try {
-    const users = (await db.orm.users.all()).map(
-      (row) =>
-        ({
-          id: row.id,
-          username: row.username,
-          name: row.name,
-          email: row.email ?? undefined,
-          createdAt: row.createdAt,
-          updatedAt: row.updatedAt ?? undefined,
-        }) as User,
-    );
+    const users = (await db.orm.users.all()) as User[];
     return NextResponse.json({ users });
   } catch (error) {
     return NextResponse.json({ error });
